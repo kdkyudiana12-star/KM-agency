@@ -95,6 +95,36 @@ const SOCIAL_MEDIA_MANAGEMENT_STUDIES: CaseStudy[] = [
     outcome:
       "Content built to look native did more than get watched — customers started DMing in full orders directly off the back of it.",
   },
+  {
+    client: "White Mangrove",
+    location: "Maldives",
+    category: "Social Media Management",
+    context:
+      "A café concept built around specialty coffee and quiet indulgence, starting from a small early audience with almost no consistent content presence.",
+    approach:
+      "Ran ongoing content and community management — behind-the-bar clips, drink features, and fast replies to DMs and comments — to build a following that actually orders, not just scrolls.",
+    headlineStat: { value: "178.5K", label: "Instagram views" },
+    stats: [
+      { value: "1.9K", label: "Content interactions" },
+      { value: "3,873", label: "Likes, up from 2,887" },
+      { value: "308", label: "Followers, up from 241" },
+      { value: "44", label: "Messaging contacts from content" },
+    ],
+    proof: [
+      {
+        src: "/case-studies/white-mangrove-profile.png",
+        alt: "White Mangrove Instagram profile showing 308 followers and 3,873 likes",
+        caption: "Official Instagram profile, current standing",
+      },
+      {
+        src: "/case-studies/white-mangrove-dm.png",
+        alt: "Customer DM asking about delivery options",
+        caption: "A real customer DM asking about delivery",
+      },
+    ],
+    outcome:
+      "Consistent behind-the-scenes content turned a quiet page into one customers actually message — asking about delivery, hours, and what's on the bar that day.",
+  },
 ];
 
 const WEBSITE_SEO_STUDIES: CaseStudy[] = [

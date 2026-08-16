@@ -15,7 +15,7 @@ const montserrat = Montserrat({
   weight: ["200", "300", "400", "600", "700"],
 });
 
-const siteUrl = "https://kreetivmedia.com";
+const siteUrl = "https://kreetiv.media";
 
 export const viewport: Viewport = {
   width: "device-width",
@@ -40,9 +40,6 @@ export const metadata: Metadata = {
     "Maldives marketing agency",
   ],
   manifest: "/manifest.json",
-  icons: {
-    apple: "/apple-icon.png",
-  },
   openGraph: {
     title: "Kreetiv Media — Social Media Marketing Agency",
     description:

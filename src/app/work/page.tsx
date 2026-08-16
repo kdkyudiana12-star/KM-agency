@@ -11,12 +11,12 @@ export const metadata: Metadata = {
   title,
   description,
   alternates: {
-    canonical: "https://kreetivmedia.com/work",
+    canonical: "https://kreetiv.media/work",
   },
   openGraph: {
     title,
     description,
-    url: "https://kreetivmedia.com/work",
+    url: "https://kreetiv.media/work",
     type: "website",
     images: [
       {
@@ -40,11 +40,11 @@ const collectionJsonLd = {
   "@type": "CollectionPage",
   name: title,
   description,
-  url: "https://kreetivmedia.com/work",
+  url: "https://kreetiv.media/work",
   isPartOf: {
     "@type": "WebSite",
     name: "Kreetiv Media",
-    url: "https://kreetivmedia.com",
+    url: "https://kreetiv.media",
   },
 };
 

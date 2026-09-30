@@ -5,7 +5,12 @@ const CLIENT_LOGOS = [
   { src: "/clients/subcontinental-kitchen.jpg", alt: "Subcontinental Kitchen" },
   { src: "/clients/brie.jpg", alt: "Brie Restaurant" },
   { src: "/clients/burger-city.jpg", alt: "Burger City" },
-  { src: "/clients/wm.jpg", alt: "Client logo" },
+  { src: "/clients/wm.jpg", alt: "White Mangrove" },
+  { src: "/clients/butchers-block.jpg", alt: "The Butchers Block Steakhouse" },
+  { src: "/clients/karak.jpg", alt: "Karak" },
+  { src: "/clients/kayo.jpg", alt: "Kayo" },
+  { src: "/clients/lily.jpg", alt: "Lily" },
+  { src: "/clients/meat-the-butcher.jpg", alt: "Meat the Butcher" },
 ];
 
 export default function Testimonial() {
@@ -14,7 +19,7 @@ export default function Testimonial() {
       <p className="mb-14 text-center font-sans text-xs font-extralight uppercase tracking-[0.28em] text-ash md:mb-16">
         Trusted across the region
       </p>
-      <div className="flex w-max animate-[marquee_24s_linear_infinite]">
+      <div className="flex w-max animate-[marquee_48s_linear_infinite]">
         {[0, 1].map((loop) => (
           <div key={loop} className="flex items-center gap-14 pr-14" aria-hidden={loop === 1}>
             {CLIENT_LOGOS.map((logo) => (

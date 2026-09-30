@@ -39,7 +39,7 @@ body {
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .animate-\[marquee_24s_linear_infinite\] {
+  .animate-\[marquee_48s_linear_infinite\] {
     animation: none;
   }
 }

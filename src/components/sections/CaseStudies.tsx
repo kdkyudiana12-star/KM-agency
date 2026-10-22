@@ -215,8 +215,8 @@ const SOCIAL_MEDIA_MANAGEMENT_STUDIES: CaseStudy[] = [
       },
       {
         src: "/case-studies/kayo-comments.png",
-        alt: "TikTok comments on Kayo posts, including an excited reaction and a question about price",
-        caption: "Viewers reacting to new drops and asking about price",
+        alt: "TikTok comment reacting to a new Kayo drop with \"wowwwww\", liked by Kayo",
+        caption: "Viewers reacting to new drops",
       },
       {
         src: "/case-studies/kayo-dms.png",

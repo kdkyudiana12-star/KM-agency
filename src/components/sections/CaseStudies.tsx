@@ -98,6 +98,94 @@ const SOCIAL_MEDIA_MANAGEMENT_STUDIES: CaseStudy[] = [
       "The content didn't just get watched — it got people messaging in for delivery, karaoke pricing, and menu availability, turning the account into a direct sales channel.",
   },
   {
+    client: "Delicalada",
+    location: "Malé, Maldives",
+    category: "Social Media Management",
+    context:
+      "A café and dessert brand serving the Maldives since 2020 — known for its kashikeyo milkshake and a pink, flower-walled space — with a small following and almost no reach on TikTok, Instagram, or Facebook.",
+    approach:
+      "Took over all three platforms with near-daily posting: staff-led relatable skits, café tours, and signature-dessert clips built for the For You page — then handled the inbox so every new viewer had a fast path to ordering.",
+    headlineStat: { value: "221.8K", label: "TikTok post views in 28 days — best month yet" },
+    stats: [
+      { value: "221.8K", label: "TikTok post views, up 85,188%" },
+      { value: "173.5K", label: "New TikTok viewers" },
+      { value: "618", label: "TikTok shares, up 30,800%" },
+      { value: "2.2K", label: "TikTok likes" },
+      { value: "1.5K", label: "TikTok profile views, up 4,827%" },
+      { value: "28", label: "TikTok comments" },
+      { value: "+148", label: "TikTok net followers (420 total)" },
+      { value: "97.3%", label: "TikTok views from the For You page" },
+      { value: "5.1K", label: "Instagram profile visits" },
+      { value: "363", label: "Instagram bio link taps" },
+      { value: "1.4K", label: "Instagram reel interactions" },
+      { value: "148.9K", label: "Facebook views, up 258x" },
+      { value: "56K", label: "Facebook viewers" },
+      { value: "489", label: "Facebook engagements, up 489x" },
+      { value: "22", label: "New Facebook follows, up 11x" },
+      { value: "7", label: "Facebook messaging conversations, up 100%" },
+    ],
+    highlights: [
+      { value: "132K", label: "Top Instagram reel" },
+      { value: "110K", label: "Top TikTok — the kashikeyo milkshake" },
+      { value: "74K", label: "Instagram reel #2" },
+    ],
+    proof: [
+      {
+        src: "/case-studies/delicalada-tiktok-stats.png",
+        alt: "TikTok analytics for Oct 10 to Nov 6 showing 221.8K post views, 2.2K likes, 618 shares, and 1.5K profile views",
+        caption: "Official TikTok Analytics, Oct 10 – Nov 6",
+      },
+      {
+        src: "/case-studies/delicalada-tiktok-viewers.png",
+        alt: "TikTok viewer analytics showing 173.7K total viewers and 173.5K new viewers",
+        caption: "173.5K brand-new viewers in 28 days",
+      },
+      {
+        src: "/case-studies/delicalada-tiktok-followers.png",
+        alt: "TikTok follower analytics showing 420 total followers and 148 net new followers",
+        caption: "148 net new TikTok followers in the same window",
+      },
+      {
+        src: "/case-studies/delicalada-tiktok-traffic.png",
+        alt: "TikTok traffic sources showing 97.3% of views from the For You page",
+        caption: "97.3% of views from the For You page — reach far beyond existing followers",
+      },
+      {
+        src: "/case-studies/delicalada-tiktok-top-posts.png",
+        alt: "Delicalada's top TikTok posts led by the kashikeyo milkshake video at 110K views, then a café tour at 38K",
+        caption: "Top TikToks: 110K, 38K, and 11K views",
+      },
+      {
+        src: "/case-studies/delicalada-ig-insights.png",
+        alt: "Instagram Insights showing top reels at 132K, 74K, 44K, and 13K views, 5.1K profile visits, and 363 bio link taps",
+        caption: "Official Instagram Insights — reels at 132K, 74K, and 44K views",
+      },
+      {
+        src: "/case-studies/delicalada-fb-views.png",
+        alt: "Facebook analytics showing 148K views over the last 28 days and 56K viewers",
+        caption: "Official Facebook Analytics, last 28 days",
+      },
+      {
+        src: "/case-studies/delicalada-fb-dashboard.png",
+        alt: "Facebook Business Dashboard showing 148,896 views up 258x, 489 engagements up 489x, 22 follows, and 7 messaging conversations",
+        caption: "Facebook Business Dashboard: views up 258x, engagement up 489x",
+      },
+      {
+        src: "/case-studies/delicalada-comments.png",
+        alt: "Instagram comments on Delicalada posts including \"One of my favorite\" and \"Good one\" with laughing emojis",
+        caption: "Followers laughing along and calling it their favorite",
+      },
+      {
+        src: "/case-studies/delicalada-dms.png",
+        alt: "Delicalada's Instagram inbox with multiple conversations tagged as leads, including one saying \"I want to place an order\"",
+        caption: "The inbox after the content took off: conversation after conversation tagged as a lead, including \"I want to place an order\"",
+        wide: true,
+      },
+    ],
+    outcome:
+      "Delicalada's best month so far. Over 220K TikTok views, nearly 150K on Facebook, and Instagram reels past 130K — and the attention converted, with the inbox filling up with leads and customers asking to place orders.",
+  },
+  {
     client: "White Mangrove",
     location: "Maldives",
     category: "Social Media Management",

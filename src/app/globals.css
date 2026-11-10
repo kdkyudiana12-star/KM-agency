@@ -38,6 +38,16 @@ body {
   overflow-x: clip;
 }
 
+/* The hero video is decoration: when iOS blocks autoplay (Low Power Mode),
+   show its poster frame instead of Safari's big play button. */
+.hero-video::-webkit-media-controls,
+.hero-video::-webkit-media-controls-panel,
+.hero-video::-webkit-media-controls-start-playback-button,
+.hero-video::-webkit-media-controls-overlay-play-button {
+  display: none !important;
+  -webkit-appearance: none;
+}
+
 @media (prefers-reduced-motion: reduce) {
   .animate-\[marquee_53s_linear_infinite\] {
     animation: none;

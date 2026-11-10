@@ -1,6 +1,7 @@
 import Link from "next/link";
 import HashLink from "@/components/HashLink";
 import SiteHeader from "@/components/SiteHeader";
+import HeroVideo from "@/components/HeroVideo";
 
 export default function Hero() {
   return (
@@ -8,17 +9,7 @@ export default function Hero() {
       className="relative flex min-h-dvh w-full flex-col overflow-hidden bg-void"
       aria-label="Kreetiv Media introduction"
     >
-      <video
-        className="absolute inset-0 h-full w-full object-cover"
-        src="/hero-bg.mp4"
-        poster="/hero-bg-poster.jpg"
-        autoPlay
-        loop
-        muted
-        playsInline
-        preload="metadata"
-        aria-hidden="true"
-      />
+      <HeroVideo src="/hero-bg.mp4" poster="/hero-bg-poster.jpg" />
       <div className="absolute inset-0 bg-void/65" />
 
       <SiteHeader />

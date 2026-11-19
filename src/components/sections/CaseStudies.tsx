@@ -5,6 +5,7 @@ import Image from "next/image";
 import { Play } from "lucide-react";
 import { useScrollReveal } from "@/hooks/useScrollReveal";
 import GoldRule from "@/components/GoldRule";
+import { FacebookIcon, InstagramIcon, TikTokIcon } from "@/components/SocialIcons";
 
 type Stat = { value: string; label: string };
 
@@ -29,11 +30,24 @@ type CaseStudy = {
   outcome: string;
   placeholder?: boolean;
   liveUrl?: string;
+  socials?: Social[];
 };
+
+type Social = { platform: "instagram" | "tiktok" | "facebook"; url: string };
+
+const PLATFORMS = {
+  instagram: { label: "Instagram", Icon: InstagramIcon },
+  tiktok: { label: "TikTok", Icon: TikTokIcon },
+  facebook: { label: "Facebook", Icon: FacebookIcon },
+} as const;
 
 const SOCIAL_MEDIA_MANAGEMENT_STUDIES: CaseStudy[] = [
   {
     client: "The Den",
+    socials: [
+      { platform: "instagram", url: "https://www.instagram.com/theden.mv/" },
+      { platform: "tiktok", url: "https://www.tiktok.com/@theden.mv" },
+    ],
     location: "Malé, Maldives",
     category: "Social Media Management",
     context:
@@ -99,6 +113,11 @@ const SOCIAL_MEDIA_MANAGEMENT_STUDIES: CaseStudy[] = [
   },
   {
     client: "Delicalada",
+    socials: [
+      { platform: "instagram", url: "https://www.instagram.com/delicalada_mv/" },
+      { platform: "tiktok", url: "https://www.tiktok.com/@delicalada_mv" },
+      { platform: "facebook", url: "https://www.facebook.com/Delicalada/" },
+    ],
     location: "Malé, Maldives",
     category: "Social Media Management",
     context:
@@ -187,6 +206,10 @@ const SOCIAL_MEDIA_MANAGEMENT_STUDIES: CaseStudy[] = [
   },
   {
     client: "White Mangrove",
+    socials: [
+      { platform: "instagram", url: "https://www.instagram.com/whitemangrove/" },
+      { platform: "tiktok", url: "https://www.tiktok.com/@whitemangrove" },
+    ],
     location: "Maldives",
     category: "Social Media Management",
     context:
@@ -232,6 +255,7 @@ const SOCIAL_MEDIA_MANAGEMENT_STUDIES: CaseStudy[] = [
   },
   {
     client: "Karak",
+    socials: [{ platform: "tiktok", url: "https://www.tiktok.com/@gokarak" }],
     location: "Malé, Maldives",
     category: "Social Media Management",
     context:
@@ -273,6 +297,10 @@ const SOCIAL_MEDIA_MANAGEMENT_STUDIES: CaseStudy[] = [
   },
   {
     client: "Kayo",
+    socials: [
+      { platform: "instagram", url: "https://www.instagram.com/kayo.mv/" },
+      { platform: "tiktok", url: "https://www.tiktok.com/@kayo.mv_" },
+    ],
     location: "Maldives",
     category: "Social Media Management",
     context:
@@ -318,6 +346,9 @@ const SOCIAL_MEDIA_MANAGEMENT_STUDIES: CaseStudy[] = [
   },
   {
     client: "Subcontinental Kitchen",
+    socials: [
+      { platform: "instagram", url: "https://www.instagram.com/subcontinentalkitchen/" },
+    ],
     location: "Maldives",
     category: "Social Media Management",
     context:
@@ -351,6 +382,10 @@ const SOCIAL_MEDIA_MANAGEMENT_STUDIES: CaseStudy[] = [
 const WEBSITE_SEO_STUDIES: CaseStudy[] = [
   {
     client: "Brie Restaurant",
+    socials: [
+      { platform: "instagram", url: "https://www.instagram.com/brie.bali/" },
+      { platform: "tiktok", url: "https://www.tiktok.com/@brie.bali" },
+    ],
     location: "Ubud, Bali",
     category: "Website & SEO",
     context:
@@ -446,6 +481,32 @@ function CaseStudyBlock({
           Visit live site
           <span aria-hidden="true">→</span>
         </a>
+      )}
+
+      {study.socials && study.socials.length > 0 && (
+        <div className="mt-8">
+          <p className="font-sans text-xs uppercase tracking-[0.1em] text-ash">
+            See {study.client} on social
+          </p>
+          <div className="mt-3 flex flex-wrap gap-3">
+            {study.socials.map(({ platform, url }) => {
+              const { label, Icon } = PLATFORMS[platform];
+              return (
+                <a
+                  key={platform}
+                  href={url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label={`${study.client} on ${label} (opens in a new tab)`}
+                  className="inline-flex min-h-11 items-center gap-2.5 rounded-full border border-ivory/30 px-5 font-sans text-xs uppercase tracking-[0.1em] text-ivory transition-colors hover:border-gold hover:text-gold"
+                >
+                  <Icon className="h-4 w-4" />
+                  {label}
+                </a>
+              );
+            })}
+          </div>
+        </div>
       )}
 
       {study.proof && study.proof.length > 0 && (

@@ -387,15 +387,38 @@ const WEBSITE_SEO_STUDIES: CaseStudy[] = [
       { platform: "tiktok", url: "https://www.tiktok.com/@brie.bali" },
     ],
     location: "Ubud, Bali",
-    category: "Website & SEO",
+    category: "Website, SEO & Social Media",
     context:
       "A restaurant with no real technical SEO foundation — thin metadata, no structured data, and a site structure that made it hard for search engines to understand the business.",
     approach:
-      "Handled SEO strategy, technical implementation, and content: meta tags, JSON-LD schema markup, and site structure improvements built to earn rich results and get found without paid ads. Scope covered strategy, implementation, and content — not hosting or deployment.",
-    headlineStat: { value: "SEO", label: "" },
+      "Handled SEO strategy, technical implementation, and content: meta tags, JSON-LD schema markup, and site structure improvements built to earn rich results and get found without paid ads. Scope covered strategy, implementation, and content — not hosting or deployment. On social, built playful staff-led short-form videos — waiters skating, catching flying plates, and moving at \"Flash speed\" — made to be watched twice and shared.",
+    headlineStat: { value: "7.9M", label: "Views on a single video" },
     stats: [],
+    highlights: [
+      { value: "443.9K", label: "Viral video #2" },
+      { value: "191.3K", label: "Viral video #3" },
+      { value: "149K", label: "Likes on one Instagram post" },
+    ],
+    proof: [
+      {
+        src: "/case-studies/brie-comments-result.png",
+        alt: "Instagram post from brie.bali with 149K likes, where commenters ask where the full video and the result are; the top comment has 1,290 likes",
+        caption: "149K likes, and viewers demanding the rest — \"Where is the result?\" got 1,290 likes on its own",
+      },
+      {
+        src: "/case-studies/brie-comments-flash.png",
+        alt: "Instagram post of a waiter moving at \"Flash speed\" with comments like \"Best!\" and \"Love the effort\"",
+        caption: "Viewers and other venues cheering the staff on in the comments",
+      },
+      {
+        src: "/case-studies/brie-viral-videos.png",
+        alt: "Four of Brie's videos with 7.9M, 443.9K, 191.3K, and 42.3K views",
+        caption: "Brie's top videos: 7.9M, 443.9K, 191.3K, and 42.3K views",
+        wide: true,
+      },
+    ],
     outcome:
-      "Most guests decide on a restaurant before they ever call — a slow or confusing site loses that booking before the conversation starts. Schema markup is what lets a business show up in Google with its rating, menu, and hours already visible, and technical SEO is what makes it discoverable without paying for reach every time.",
+      "On social, a single video passed 7.9 million views and viewers flooded the comments asking for the full video. On search, schema markup lets the business show up in Google with its rating, menu, and hours already visible, and technical SEO keeps it discoverable without paying for reach every time.",
     placeholder: true,
     liveUrl: "https://brie-web.vercel.app/",
   },
